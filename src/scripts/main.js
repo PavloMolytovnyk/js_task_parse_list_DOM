@@ -1,7 +1,7 @@
 'use strict';
 
-function getEmployees(list) {
-  return Array.from(list).map((element) => {
+function getEmployees(pagesTag) {
+  return Array.from(pagesTag).map((element) => {
     return {
       name: element.textContent.trim(),
       position: element.dataset.position,
